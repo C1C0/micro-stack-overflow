@@ -2,7 +2,7 @@
   <div>
     <vue-profile-data-label :name="name">
       <span v-if="!editing">{{ text }}</span>
-      <vue-input v-else :name="name" :value="text"/>
+      <vue-input v-else :name="name" :value="text" @keyup="$emit('keyup', $event)"/>
     </vue-profile-data-label>
   </div>
 </template>

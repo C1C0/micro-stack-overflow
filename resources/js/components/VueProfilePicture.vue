@@ -6,15 +6,21 @@
     >
 
     <input v-if="editing" type="file">
+
+    <p v-show="errors === ''">{{errors}}</p>
   </div>
 </template>
 
 <script>
+
 export default {
   style: {},
-  props:{
+  props: {
     editing: {
       default: false,
+    },
+    errors: {
+      default: '',
     }
   },
   data() {

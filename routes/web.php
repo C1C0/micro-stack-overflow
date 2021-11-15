@@ -16,3 +16,4 @@ Route::get('logout', [SessionController::class, 'destroy'])->middleware('auth');
 Route::post('sessions', [SessionController::class, 'store'])->middleware('guest');
 
 Route::get('user/{user:username}', [UserController::class, 'index'])->middleware('auth');
+Route::put('user/{user:id}', [UserController::class, 'update'])->middleware('auth');
