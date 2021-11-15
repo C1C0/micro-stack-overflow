@@ -16,6 +16,7 @@ class QuestionFactory extends Factory
     {
         return [
             'user_id' => User::factory(),
+            'title' => $this->faker->words(random_int(3, 12), true),
             'body' => $this->faker->text(500),
             'votes' => random_int(0, 234),
         ];
