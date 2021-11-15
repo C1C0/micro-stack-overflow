@@ -1,5 +1,5 @@
-/public/js/app.js
-/public/css/app.css
+public/js/*.js
+public/css/*.css
 /node_modules
 /public/hot
 /public/storage
