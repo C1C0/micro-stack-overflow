@@ -1,0 +1,1 @@
+<a {{$attributes(['class' => "text-decoration-none ms-3"])}}} href="/question">{{$slot}}</a>

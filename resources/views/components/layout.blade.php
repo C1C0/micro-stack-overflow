@@ -11,6 +11,7 @@
 </head>
 <body>
 <div class="container">
+    @include('components._header')
     @yield('content')
 </div>
 
