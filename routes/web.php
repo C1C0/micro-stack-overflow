@@ -10,6 +10,8 @@ Route::get('/', [QuestionController::class, 'index']);
 Route::get('question/create', [QuestionController::class, 'create'])->middleware('auth');
 Route::get('question/{question}', [QuestionController::class, 'show']);
 Route::post('question', [QuestionController::class, 'store'])->middleware('auth');
+Route::get('question/{question}/edit', [QuestionController::class, 'edit'])->middleware('auth');
+Route::patch('question/{question}', [QuestionController::class, 'update'])->middleware('auth');
 
 Route::get('register', [RegisterController::class, 'create'])->middleware('guest');
 Route::post('register', [RegisterController::class, 'store'])->middleware('guest');

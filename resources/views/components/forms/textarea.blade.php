@@ -1,4 +1,10 @@
-@props(['name', 'required' => false, 'label' => ucwords($name), 'placeholder' => ''])
+@props([
+    'name',
+    'required' => false,
+    'label' => ucwords($name),
+    'placeholder' => '',
+     'initValue' => null,
+    ])
 
 <div class="mb-3">
     <div class="input-group ">
@@ -10,7 +16,7 @@
                   aria-label="{{ $name }}"
                   placeholder="{{$placeholder}}"
                   class="form-control bg-white w-25"
-                {{ $required ? 'required' : '' }}>{{old($name)}}</textarea>
+                {{ $required ? 'required' : '' }}>{{old($name, $initValue)}}</textarea>
     </div>
 
     @error($name)

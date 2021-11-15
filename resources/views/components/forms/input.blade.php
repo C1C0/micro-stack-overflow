@@ -1,4 +1,11 @@
-@props(['type' => 'text', 'name', 'required' => false, 'label' => ucwords($name), 'placeholder' => ''])
+@props([
+    'type' => 'text',
+    'name',
+    'required' => false,
+    'label' => ucwords($name),
+    'placeholder' => '',
+    'initValue' => null,
+    ])
 
 <div class="mb-3">
     <div class="input-group ">
@@ -10,7 +17,7 @@
                type="{{$type}}"
                aria-label="{{ $name }}"
                placeholder="{{$placeholder}}"
-               value="{{$type !== 'password' ? old($name) : ''}}"
+               value="{{$type !== 'password' ? old($name, $initValue) : ''}}"
                class="form-control bg-white w-25"
                 {{ $required ? 'required' : '' }}>
     </div>
