@@ -17,10 +17,11 @@ class User extends Authenticatable
      * @var string[]
      */
     protected $fillable = [
-        'name',
+        'username',
         'email',
         'password',
     ];
+
 
     /**
      * The attributes that should be hidden for serialization.
@@ -41,8 +42,19 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    /**
+     * Helper function to get all questions by this user
+     */
     public function questions()
     {
         return $this->hasMany(Question::class);
+    }
+
+    /**
+     * Mutates password during assignment
+     * @param  string  $password
+     */
+    public function setPasswordAttribute(string $password){
+        $this->attributes['password'] = bcrypt($password);
     }
 }
