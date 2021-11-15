@@ -4,5 +4,11 @@
 // Variables
 @import 'variables';
 
+// Utilities variations
+@import 'utilities';
+
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/bootstrap.scss';
+
+// Bootstrap icons
+@import '~bootstrap-icons';
