@@ -2073,10 +2073,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/VueChangeableInput.vue?vue&type=script&lang=js&":
-/*!*************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/VueChangeableInput.vue?vue&type=script&lang=js& ***!
-  \*************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/VueChangableInput.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/VueChangableInput.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2206,7 +2206,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _VueChangeableInput__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./VueChangeableInput */ "./resources/js/components/VueChangeableInput.vue");
+/* harmony import */ var _VueChangableInput__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./VueChangableInput */ "./resources/js/components/VueChangableInput.vue");
 /* harmony import */ var _VueInput__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./VueInput */ "./resources/js/components/VueInput.vue");
 /* harmony import */ var _VueButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./VueButton */ "./resources/js/components/VueButton.vue");
 //
@@ -2234,7 +2234,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
-    VueChangeableInput: _VueChangeableInput__WEBPACK_IMPORTED_MODULE_0__["default"],
+    VueChangeableInput: _VueChangableInput__WEBPACK_IMPORTED_MODULE_0__["default"],
     VueInput: _VueInput__WEBPACK_IMPORTED_MODULE_1__["default"],
     VueButton: _VueButton__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
@@ -2305,10 +2305,6 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 /* harmony import */ var _components_VueProfile__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/VueProfile */ "./resources/js/components/VueProfile.vue");
-/* harmony import */ var _components_VueProfilePicture__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/VueProfilePicture */ "./resources/js/components/VueProfilePicture.vue");
-/* harmony import */ var _components_VueProfileData__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/VueProfileData */ "./resources/js/components/VueProfileData.vue");
-
-
 
 
 new Vue({
@@ -20211,10 +20207,10 @@ component.options.__file = "resources/js/components/VueButton.vue"
 
 /***/ }),
 
-/***/ "./resources/js/components/VueChangeableInput.vue":
-/*!********************************************************!*\
-  !*** ./resources/js/components/VueChangeableInput.vue ***!
-  \********************************************************/
+/***/ "./resources/js/components/VueChangableInput.vue":
+/*!*******************************************************!*\
+  !*** ./resources/js/components/VueChangableInput.vue ***!
+  \*******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20222,8 +20218,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _VueChangeableInput_vue_vue_type_template_id_f50789b6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./VueChangeableInput.vue?vue&type=template&id=f50789b6& */ "./resources/js/components/VueChangeableInput.vue?vue&type=template&id=f50789b6&");
-/* harmony import */ var _VueChangeableInput_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./VueChangeableInput.vue?vue&type=script&lang=js& */ "./resources/js/components/VueChangeableInput.vue?vue&type=script&lang=js&");
+/* harmony import */ var _VueChangableInput_vue_vue_type_template_id_3f7b0aa6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./VueChangableInput.vue?vue&type=template&id=3f7b0aa6& */ "./resources/js/components/VueChangableInput.vue?vue&type=template&id=3f7b0aa6&");
+/* harmony import */ var _VueChangableInput_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./VueChangableInput.vue?vue&type=script&lang=js& */ "./resources/js/components/VueChangableInput.vue?vue&type=script&lang=js&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -20233,9 +20229,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 ;
 var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _VueChangeableInput_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _VueChangeableInput_vue_vue_type_template_id_f50789b6___WEBPACK_IMPORTED_MODULE_0__.render,
-  _VueChangeableInput_vue_vue_type_template_id_f50789b6___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  _VueChangableInput_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _VueChangableInput_vue_vue_type_template_id_3f7b0aa6___WEBPACK_IMPORTED_MODULE_0__.render,
+  _VueChangableInput_vue_vue_type_template_id_3f7b0aa6___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
   null,
   null,
@@ -20245,7 +20241,7 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/VueChangeableInput.vue"
+component.options.__file = "resources/js/components/VueChangableInput.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
@@ -20424,10 +20420,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/VueChangeableInput.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************!*\
-  !*** ./resources/js/components/VueChangeableInput.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************/
+/***/ "./resources/js/components/VueChangableInput.vue?vue&type=script&lang=js&":
+/*!********************************************************************************!*\
+  !*** ./resources/js/components/VueChangableInput.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20435,8 +20431,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VueChangeableInput_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./VueChangeableInput.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/VueChangeableInput.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VueChangeableInput_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VueChangableInput_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./VueChangableInput.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/VueChangableInput.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VueChangableInput_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
@@ -20534,19 +20530,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/VueChangeableInput.vue?vue&type=template&id=f50789b6&":
-/*!***************************************************************************************!*\
-  !*** ./resources/js/components/VueChangeableInput.vue?vue&type=template&id=f50789b6& ***!
-  \***************************************************************************************/
+/***/ "./resources/js/components/VueChangableInput.vue?vue&type=template&id=3f7b0aa6&":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/components/VueChangableInput.vue?vue&type=template&id=3f7b0aa6& ***!
+  \**************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VueChangeableInput_vue_vue_type_template_id_f50789b6___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VueChangeableInput_vue_vue_type_template_id_f50789b6___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VueChangableInput_vue_vue_type_template_id_3f7b0aa6___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VueChangableInput_vue_vue_type_template_id_3f7b0aa6___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VueChangeableInput_vue_vue_type_template_id_f50789b6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./VueChangeableInput.vue?vue&type=template&id=f50789b6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/VueChangeableInput.vue?vue&type=template&id=f50789b6&");
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VueChangableInput_vue_vue_type_template_id_3f7b0aa6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./VueChangableInput.vue?vue&type=template&id=3f7b0aa6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/VueChangableInput.vue?vue&type=template&id=3f7b0aa6&");
 
 
 /***/ }),
@@ -20656,10 +20652,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/VueChangeableInput.vue?vue&type=template&id=f50789b6&":
-/*!******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/VueChangeableInput.vue?vue&type=template&id=f50789b6& ***!
-  \******************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/VueChangableInput.vue?vue&type=template&id=3f7b0aa6&":
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/VueChangableInput.vue?vue&type=template&id=3f7b0aa6& ***!
+  \*****************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
