@@ -14,11 +14,19 @@
                     <a href="/question/{{$answer->question->id}}?answerEdit={{$answer->id}}">Edit</a>
                 @endif
             @endauth
-{{--            <x-forms.submit label="edit" class="flex-shrink-1 flex-grow-0 w-max-content" />--}}
+            {{--            <x-forms.submit label="edit" class="flex-shrink-1 flex-grow-0 w-max-content" />--}}
 
         </div>
         <div class="card-text">
-            {{$answer->body}}
+            <x-forms.form method="POST" action="/question/{{$answer->question->id}}/answer/{{$answer->id}}">
+                @method('PATCH')
+
+                <x-slot name="noClass">
+                    <x-forms.textarea-default name="body" required :initValue="$answer->body"/>
+                    <x-forms.submit label="Save" />
+                </x-slot>
+
+            </x-forms.form>
         </div>
     </div>
 </div>

@@ -7,7 +7,7 @@ new Vue({
     el: '#app',
     components: {
         VueProfileEditable,
-        VueProfileCommon
+        VueProfileCommon,
     },
     data: {}
 });

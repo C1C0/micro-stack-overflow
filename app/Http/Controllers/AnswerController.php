@@ -24,4 +24,13 @@ class AnswerController extends Controller
 
         return back();
     }
+
+    public function update(Question $question, Answer $answer, Request $request)
+    {
+        $attributes = $request->validate(['body' => ['required', 'min:5']]);
+
+        $answer->update($attributes);
+
+        return redirect('question/' . $question->id);
+    }
 }

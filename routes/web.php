@@ -15,6 +15,7 @@ Route::get('question/{question}/edit', [QuestionController::class, 'edit'])->mid
 Route::patch('question/{question}', [QuestionController::class, 'update'])->middleware('auth');
 
 Route::post('question/{question}/answer', [AnswerController::class, 'store'])->middleware('auth');
+Route::patch('question/{question}/answer/{answer}', [AnswerController::class, 'update'])->middleware('auth');
 
 Route::get('register', [RegisterController::class, 'create'])->middleware('guest');
 Route::post('register', [RegisterController::class, 'store'])->middleware('guest');
