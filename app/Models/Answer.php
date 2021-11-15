@@ -5,14 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Question extends Model
+class Answer extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title', 'body', 'media', 'user_id'];
-
     /**
-     * Helper function to get user of certain post
+     * Helper function to get user of selected answer
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
@@ -21,11 +19,11 @@ class Question extends Model
     }
 
     /**
-     * Helper function to get all answers of certain post
+     * Helpef function to get question of selected answer
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function answers(){
-        return $this->hasMany(Answer::class);
+    public function question(){
+        return $this->belongsTo(Question::class);
     }
 }

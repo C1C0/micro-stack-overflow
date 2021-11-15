@@ -43,11 +43,19 @@ class User extends Authenticatable
     ];
 
     /**
-     * Helper function to get all questions by this user
+     * Helper function to get all questions of this user
      */
     public function questions()
     {
         return $this->hasMany(Question::class);
+    }
+
+    /**
+     * Helper function to get all answers of this user
+     */
+    public function answers()
+    {
+        return $this->hasMany(Answer::class);
     }
 
     /**
