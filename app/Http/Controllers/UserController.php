@@ -54,18 +54,38 @@ class UserController extends Controller
                 [
                     'username' => ['required', 'max:255', 'min:5'],
                     'email' => ['required', 'email', Rule::unique('users', 'email')->ignore($user->id)],
-
                 ]
             );
         }
 
         if (!$user->update($attributes)) {
             return Response::json(
-                ['status' => 'error', 'message' => 'A problem occured during updating the user'],
+                ['status' => 'error', 'message' => 'A problem occurred during updating the user'],
                 500
             );
         }
 
+        return Response::json();
+    }
+
+    public function picture(User $user, Request $request){
+        $attributes = $request->validate(['picture' => ['image']]);
+
+        $attributes['picture'] = $request->file('picture')->store('profiles/media');
+
+        if (!$user->update($attributes)) {
+            return Response::json(
+                ['status' => 'error', 'message' => 'A problem occurred during updating the user'],
+                500
+            );
+        }
+
+        return Response::json($user);
+    }
+
+    public function remove(User $user, Request $request){
+        $attributes = ['picture' => null];
+        $user->update($attributes);
         return Response::json();
     }
 }

@@ -32,7 +32,7 @@ export default {
   data() {
     return {
       editing: false,
-      user: new User(this.data.id, this.data.username, this.data.email),
+      user: new User(this.data.id, this.data.username, this.data.email, this.data.picture),
       errors: new Errors(),
     }
   },
@@ -49,10 +49,6 @@ export default {
         // change to previous state
         this.editing = !this.editing;
 
-        // URL is based on username
-        if (data) {
-          location.href = `/user/${this.user.username}`
-        }
       }).catch(error => {
         console.log(error.errors);
         this.errors.errors = error.errors;

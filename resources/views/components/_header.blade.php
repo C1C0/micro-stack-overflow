@@ -11,7 +11,7 @@
         @else
             <x-navigation.nav-item class="text-white" href="/question/create">Ask Question</x-navigation.nav-item>
             <x-navigation.nav-item class="text-white fw-bold"
-                                   href="/user/{{auth()->user()->username}}">
+                                   href="/user/{{auth()->user()->id}}">
                 {{ auth()->user()->username }}
             </x-navigation.nav-item>
             <x-navigation.nav-item class="text-white" href="/logout">Log Out</x-navigation.nav-item>

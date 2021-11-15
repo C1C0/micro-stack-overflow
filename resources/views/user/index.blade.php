@@ -2,6 +2,7 @@
 
 @section('content')
     <x-vue-app>
+{{--        @dd($user)--}}
         @if($editable)
             <x-page-title>Your profile, {{ auth()->user()->username }}</x-page-title>
             <vue-profile-editable :data="{{$user}}"></vue-profile-editable>

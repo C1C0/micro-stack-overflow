@@ -20,7 +20,7 @@
         <div class="card-text">
             {{$question->body}}
 
-            <x-questions.by-user :username="$question->user->username" class="mt-5"/>
+            <x-questions.by-user :username="$question->user->username" :userId="$question->user->id" class="mt-5"/>
         </div>
         {{--        @dd($question->media)--}}
         @if($question->media ?? false)
