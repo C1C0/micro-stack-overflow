@@ -30,9 +30,11 @@ class QuestionController extends Controller
             [
                 'title' => ['required', 'min:5', 'max:255'],
                 'body' => ['required'],
-                'media' => ['file'],
+                'media' => ['image'],
             ]
         );
+
+        $attributes['media'] = $request->file('media')->store('questions/media');
 
         $attributes['user_id'] = Auth::user()->id;
 
@@ -55,9 +57,11 @@ class QuestionController extends Controller
             [
                 'title' => ['required', 'min:5', 'max:255'],
                 'body' => ['required'],
-                'media' => ['file'],
+                'media' => ['image'],
             ]
         );
+
+        $attributes['media'] = $request->file('media')->store('questions/media');
 
         $question->update($attributes);
 

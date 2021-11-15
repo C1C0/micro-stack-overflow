@@ -22,5 +22,13 @@
 
             <x-questions.by-user :username="$question->user->username" class="mt-5"/>
         </div>
+        {{--        @dd($question->media)--}}
+        @if($question->media ?? false)
+            <hr>
+            <div class="card-media">
+                <h5>Media</h5>
+                <div style="background-image: url('{{asset('storage/'.$question->media)}}')"></div>
+            </div>
+        @endif
     </div>
 </div>
