@@ -1,6 +1,9 @@
 <div class="d-flex justify-content-between bg-primary px-4 py-3 mb-4 rounded-bottom">
-    <x-questions.title class="text-white"><a href="/" class="text-white text-decoration-none">Micro Stack Overflow</a>
-    </x-questions.title>
+    <h4 class="text-white">
+        <a href="/" class="text-white text-decoration-none">
+            Micro Stack Overflow
+        </a>
+    </h4>
 
     <nav>
         <x-navigation.nav-item class="text-white">Ask Question</x-navigation.nav-item>
