@@ -3,7 +3,8 @@
     'required' => false,
     'label' => ucwords($name),
     'placeholder' => '',
-     'initValue' => null,
+    'initValue' => null,
+    'rows' => 5
     ])
 
 <div class="mb-3">
@@ -16,6 +17,7 @@
                   aria-label="{{ $name }}"
                   placeholder="{{$placeholder}}"
                   class="form-control bg-white w-25"
+                  rows="{{$rows}}"
                 {{ $required ? 'required' : '' }}>{{old($name, $initValue)}}</textarea>
     </div>
 

@@ -9,6 +9,8 @@ class Answer extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['body', 'user_id', 'question_id'];
+
     /**
      * Helper function to get user of selected answer
      *
