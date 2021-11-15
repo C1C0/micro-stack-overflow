@@ -1,5 +1,5 @@
 @php /** Default implementation of VueJS 2 */  @endphp
 
-<div id="app">
+<div {{$attributes(['id' => ''])}}>
     {{ $slot }}
 </div>

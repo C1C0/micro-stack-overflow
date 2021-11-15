@@ -4,7 +4,7 @@
     <div class="card-body">
         <div class="d-flex align-items-center justify-content-between card-title">
             <div class="d-flex align-content-center justify-content-between flex-grow-1 flex-shrink-0 me-3">
-                <h5 class="me-5">#{{$num}} -- By: <span class="fw-bold">{{$answer->user->username}}</span></h5>
+                <h5 class="me-5">#{{$num}} -- By: <span class="fw-bold">{{$answer->user->username}}</span><span class="ms-3">({{$answer->votes}})</span></span></h5>
                 <p class="text-black-50 mb-0">{{$answer->created_at}}</p>
             </div>
 

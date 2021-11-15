@@ -5,5 +5,4 @@
         <span class="fw-bold">{{$slot}}</span>
         <x-icons.arrow direction="down" class="m-auto"></x-icons.arrow>
     </div>
-
 </div>

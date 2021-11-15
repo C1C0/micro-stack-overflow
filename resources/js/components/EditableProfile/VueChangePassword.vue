@@ -39,18 +39,12 @@ export default {
       this.user.update({
         password: this.user.password,
         password2: this.user.password2,
+      }).then(() => {
+        this.user.password = '';
+        this.user.password2 = '';
+        this.changePassword = false;
       });
     },
-
-    /**
-     * sets password and clears input
-     * @param password
-     * @param $event
-     */
-    getPassword(password, $event){
-      password = $event.target.value
-      $event.target.value = '';
-    }
   }
 }
 </script>

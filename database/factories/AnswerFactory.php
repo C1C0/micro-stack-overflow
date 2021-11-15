@@ -19,6 +19,7 @@ class AnswerFactory extends Factory
             'user_id' => User::factory(),
             'question_id' => Question::factory(),
             'body' => $this->faker->sentences(3, true),
+            'votes' => random_int(0, 124),
         ];
     }
 }

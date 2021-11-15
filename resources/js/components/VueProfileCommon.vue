@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="col-3">
-      <vue-profile-picture :editing="editing"></vue-profile-picture>
+      <vue-profile-picture :user="user"></vue-profile-picture>
     </div>
     <div class="col-8">
       <vue-profile-data-label name="username">{{user.username}}</vue-profile-data-label>

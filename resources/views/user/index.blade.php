@@ -1,7 +1,7 @@
 @extends('components.layout')
 
 @section('content')
-    <x-vue-app>
+    <x-vue-app id="profile">
 {{--        @dd($user)--}}
         @if($editable)
             <x-page-title>Your profile, {{ auth()->user()->username }}</x-page-title>

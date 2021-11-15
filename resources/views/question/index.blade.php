@@ -4,6 +4,6 @@
 
 @section('content')
     @foreach($questions as $question)
-        <x-questions.question :question="$question" class="mb-3" />
+        <x-questions.question :question="$question" class="mb-3"/>
     @endforeach
 @endsection
