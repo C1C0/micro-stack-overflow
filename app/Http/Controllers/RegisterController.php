@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\User;
+use Illuminate\Validation\Rule;
+use Illuminate\Validation\Rules\Password;
 
 class RegisterController extends Controller
 {
@@ -13,25 +15,20 @@ class RegisterController extends Controller
 
     public function store()
     {
-        // Redirects to previous page if condition not met
         $attributes = request()->validate(
             [
-//                'name' => ['required', 'max:30'], // new syntax,
-//                'username' => 'required|min:3|max:25|unique:users,username', //unique:<table>,<column>
-//                'email' => ['required', 'email', Rule::unique('users', 'email')],
-//                'password' => ['required', 'min:7', 'max:255'],
+                'username' => ['required', 'max:255', 'min:5', Rule::unique('users', 'username')],
+                'email' => ['required', 'email', Rule::unique('users', 'email')],
+                'password' => [
+                    'required',
+                    'max:255',
+                    Password::default(),
+                ],
             ]
         );
 
-//        $user = new User();
-//        $user->name = $attributes['name'];
-//        $user->username = $attributes['username'];
-//        $user->email = $attributes['email'];
-//        $user->password = $attributes['password'];
-//        $user->save();
-
-//        // Login user
-//        auth()->login($user);
+        $user = User::create($attributes);
+        auth()->login($user);
 
 //        return redirect('/')->with(Config::get('constants.SESSION.SUCCESS'), 'Your account has been created.');
     }

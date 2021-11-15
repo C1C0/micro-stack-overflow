@@ -2,7 +2,8 @@
 
 @section('content')
     <x-page-title>Register</x-page-title>
-    <x-forms.form action="/login" method="POST" class="py-5">
+    <x-forms.form action="/register" method="POST" class="py-5">
+        <x-forms.input name="username" />
         <x-forms.input name="email" placeholder="user@example.com"/>
         <x-forms.input name="password"/>
         <x-forms.submit label="Submit"/>
