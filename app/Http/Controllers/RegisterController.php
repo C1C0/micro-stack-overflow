@@ -30,6 +30,7 @@ class RegisterController extends Controller
         $user = User::create($attributes);
         auth()->login($user);
 
-//        return redirect('/')->with(Config::get('constants.SESSION.SUCCESS'), 'Your account has been created.');
+//        ->with(Config::get('constants.SESSION.SUCCESS'), 'Your account has been created.')
+        return redirect('/');
     }
 }

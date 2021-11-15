@@ -3,6 +3,10 @@
 
     <nav>
         <x-navigation.nav-item class="text-white">Ask Question</x-navigation.nav-item>
-        <x-navigation.nav-item class="text-white" href="/login">Log In</x-navigation.nav-item>
+        @guest
+            <x-navigation.nav-item class="text-white" href="/login">Log In</x-navigation.nav-item>
+        @else
+            <x-navigation.nav-item class="text-white" href="/logout">Log Out</x-navigation.nav-item>
+        @endguest
     </nav>
 </div>
