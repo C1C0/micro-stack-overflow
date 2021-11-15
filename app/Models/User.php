@@ -59,6 +59,10 @@ class User extends Authenticatable
         return $this->hasMany(Answer::class);
     }
 
+    public function votes(){
+        return $this->belongsToMany(Question::class, 'user_question', 'user_id');
+    }
+
     /**
      * Mutates password during assignment
      * @param  string  $password
