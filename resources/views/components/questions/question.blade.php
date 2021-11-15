@@ -7,7 +7,7 @@
             <x-questions.votes>{{$question->votes}}</x-questions.votes>
         </div>
         <div class="card-text">
-            <x-questions.by-user :name="$question->user->name"/>
+            <x-questions.by-user :name="$question->user->username"/>
         </div>
     </div>
 </div>
