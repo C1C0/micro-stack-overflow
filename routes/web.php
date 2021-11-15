@@ -7,7 +7,9 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [QuestionController::class, 'index']);
+Route::get('question/create', [QuestionController::class, 'create'])->middleware('auth');
 Route::get('question/{question}', [QuestionController::class, 'show']);
+Route::post('question', [QuestionController::class, 'store'])->middleware('auth');
 
 Route::get('register', [RegisterController::class, 'create'])->middleware('guest');
 Route::post('register', [RegisterController::class, 'store'])->middleware('guest');

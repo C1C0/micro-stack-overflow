@@ -6,10 +6,10 @@
     </h4>
 
     <nav>
-        <x-navigation.nav-item class="text-white">Ask Question</x-navigation.nav-item>
         @guest
             <x-navigation.nav-item class="text-white" href="/login">Log In</x-navigation.nav-item>
         @else
+            <x-navigation.nav-item class="text-white" href="/question/create">Ask Question</x-navigation.nav-item>
             <x-navigation.nav-item class="text-white fw-bold"
                                    href="/user/{{auth()->user()->username}}">
                 {{ auth()->user()->username }}
