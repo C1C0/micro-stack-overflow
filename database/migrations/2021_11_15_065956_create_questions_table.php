@@ -16,9 +16,10 @@ class CreateQuestionsTable extends Migration
         Schema::create('questions', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
+            $table->string('title');
             $table->text('body');
             $table->string('media')->nullable();
-            $table->unsignedInteger('votes')->default(0);
+            $table->integer('votes')->default(0);
             $table->timestamps();
         });
     }
