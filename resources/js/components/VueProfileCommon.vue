@@ -11,13 +11,12 @@
 </template>
 
 <script>
-import VueProfileData from "./EditableProfile/VueProfileData";
 import VueProfilePicture from "./VueProfilePicture";
 import VueProfileDataLabel from "./VueProfileDataLabel";
 
 export default {
 
-  components: {VueProfileDataLabel, VueProfileData, VueProfilePicture},
+  components: {VueProfileDataLabel, VueProfilePicture},
   props: {
     user: {
       required: true,
