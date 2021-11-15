@@ -14,7 +14,7 @@
 
 <script>
 import VueProfileData from "./VueProfileData";
-import VueProfilePicture from "./VueProfilePicture";
+import VueProfilePicture from "../VueProfilePicture";
 
 export default {
 

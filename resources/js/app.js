@@ -1,11 +1,13 @@
 import './bootstrap'
 
-import VueProfile from "./components/VueProfile";
+import VueProfileEditable from "./components/EditableProfile/VueProfileEditable";
+import VueProfileCommon from "./components/VueProfileCommon";
 
 new Vue({
     el: '#app',
     components: {
-        VueProfile,
+        VueProfileEditable,
+        VueProfileCommon
     },
     data: {}
 });

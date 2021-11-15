@@ -1,8 +1,13 @@
 @extends('components.layout')
 
 @section('content')
-    <x-page-title>Your profile, {{ auth()->user()->username }}</x-page-title>
     <x-vue-app>
-        <vue-profile :user="{{$user}}"></vue-profile>
+        @if($editable)
+            <x-page-title>Your profile, {{ auth()->user()->username }}</x-page-title>
+            <vue-profile-editable :user="{{$user}}"></vue-profile-editable>
+        @else
+            <x-page-title>Profile of "{{ $user->username }}"</x-page-title>
+            <vue-profile-common :user="{{$user}}"></vue-profile-common>
+        @endif
     </x-vue-app>
 @endsection

@@ -1,28 +1,15 @@
 <template>
   <div>
     <p>{{ name | capitalize }}:
-      <span v-if="!editing">{{ text }}</span>
-      <vue-input v-else :name="name" :value="text"/>
+      <slot></slot>
     </p>
   </div>
 </template>
 
 <script>
-import VueInput from "./VueInput";
-
 export default {
-  components: {VueInput},
-
-  props: {
-    editing: {
-      default: false,
-    },
-
+  props:{
     name: {
-      required: true,
-    },
-
-    text: {
       required: true,
     }
   },

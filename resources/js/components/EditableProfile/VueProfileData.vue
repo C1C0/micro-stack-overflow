@@ -20,8 +20,8 @@
 
 <script>
 import VueChangeableInput from './VueChangableInput';
-import VueInput from "./VueInput";
-import VueButton from "./VueButton";
+import VueInput from "../VueInput";
+import VueButton from "../VueButton";
 
 export default {
   components: {VueChangeableInput, VueInput, VueButton},

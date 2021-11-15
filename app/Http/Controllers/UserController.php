@@ -3,17 +3,24 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
-    public function index()
+    public function index(User $user)
     {
-        $user = new User;
-        $activeUser = auth()->user();
+        $activeUser = Auth::user();
+        $makeEditable = false;
 
-        $user->username = $activeUser->username;
-        $user->email = $activeUser->email;
+        // check, if visited user is also signed in
+        if ($user->is($activeUser)) {
+            $makeEditable = true;
+            $visitedUser = $user;
+        }else{
+            $visitedUser = new User;
+            $visitedUser->username = $user->username;
+        }
 
-        return view('user.index', ['user' => $user]);
+        return view('user.index', ['user' => $visitedUser, 'editable' => $makeEditable]);
     }
 }
