@@ -16,7 +16,8 @@ class Question extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function user(){
+    public function user()
+    {
         return $this->belongsTo(User::class);
     }
 
@@ -25,11 +26,13 @@ class Question extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function answers(){
+    public function answers()
+    {
         return $this->hasMany(Answer::class);
     }
 
-    public function voters(){
-        return $this->belongsToMany(User::class, 'user_question', 'question_id');
+    public function voters()
+    {
+        return $this->belongsToMany(User::class, 'user_question', 'question_id')->withPivot('vote');
     }
 }

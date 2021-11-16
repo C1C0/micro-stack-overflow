@@ -1,0 +1,9 @@
+.bi{
+  &.bi-arrow-down-circle, &.bi-arrow-up-circle{
+    border-radius: 50%;
+    cursor: pointer;
+    &.selected{
+      background-color: $primary;
+    }
+  }
+}

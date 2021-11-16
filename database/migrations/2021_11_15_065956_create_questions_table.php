@@ -19,7 +19,6 @@ class CreateQuestionsTable extends Migration
             $table->string('title');
             $table->text('body');
             $table->string('media')->nullable();
-            $table->integer('votes')->default(0);
             $table->timestamps();
         });
     }

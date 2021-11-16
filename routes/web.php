@@ -5,6 +5,7 @@ use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\VoteController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [QuestionController::class, 'index']);
@@ -28,3 +29,5 @@ Route::get('user/{user:id}', [UserController::class, 'index'])->middleware('auth
 Route::put('user/{user:id}', [UserController::class, 'update'])->middleware('auth');
 Route::post('user/{user}/picture', [UserController::class, 'picture'])->middleware('auth');
 Route::delete('user/{user}/picture', [UserController::class, 'remove'])->middleware('auth');
+
+Route::post('vote/question/{question}', [VoteController::class, 'question'])->middleware('auth');
