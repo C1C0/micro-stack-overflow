@@ -15,7 +15,10 @@
             </div>
 
 
-            <x-questions.votes>{{$question->votes}}</x-questions.votes>
+            <x-questions.votes :questionId="$question->id"
+                               :votedFor="$question->voters->find(auth()->user()->id ?? 0)"
+
+            >{{($question->voters->where('pivot.vote', '>', 0)->count() - $question->voters->where('pivot.vote', '<', 0)->count())}}</x-questions.votes>
         </div>
         <div class="card-text">
             {{$question->body}}
